@@ -59,7 +59,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         {
             binding.textName.setText(user.name);
             binding.textEmail.setText(user.email);
-//            binding.imageProfile.setImageBitmap(getUserImage(user.image));
+           binding.imageProfile.setImageBitmap(getUserImage(user.image));
             binding.getRoot().setOnClickListener(v->userListener.onUserClicked(user));
         }
     }
