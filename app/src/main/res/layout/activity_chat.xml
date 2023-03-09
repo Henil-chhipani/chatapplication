@@ -77,18 +77,7 @@
         android:background="@color/primary"
         android:layout_marginTop="@dimen/_12sdp"
         app:layout_constraintTop_toBottomOf="@id/imageBack"/>
-    <TextView
-        android:id="@+id/textAvailability"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/viewSupporter"
-        android:text="Online"
-        android:gravity="center"
-        android:background="@color/green"
-        android:textColor="@color/white"
-        android:padding="@dimen/_2sdp"
-        android:visibility="gone"
-        />
+
     
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatRecycleView"
@@ -159,5 +148,18 @@
     app:layout_constraintEnd_toStartOf="@id/layoutSend"
     app:layout_constraintStart_toStartOf="parent"
     />
+
+    <TextView
+        android:id="@+id/textAvailability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/viewSupporter"
+        android:text="Online"
+        android:gravity="center"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:padding="@dimen/_2sdp"
+        android:visibility="gone"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
